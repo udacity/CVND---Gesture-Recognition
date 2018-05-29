@@ -24,7 +24,7 @@ More information, including alternative ways to download the dataset, is availab
 
 ## 2. Change The Config File
 
-After you download the Jester dataset
+After you download the Jester dataset 
 
 # CPU/GPU option
 Use `--use_gpu` flag to specify whether you want to use GPUs or CPUs for your computation
