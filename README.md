@@ -22,7 +22,7 @@ More information, including alternative ways to download the dataset, is availab
 
 ## 2. Modify The `config.json` File
 
-In teh 
+In the 
 
 
 # CPU/GPU option
