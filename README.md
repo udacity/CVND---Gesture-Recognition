@@ -39,7 +39,7 @@ These files **can** be modified and we recommend you use these files when quickl
 
 The code allows you to choose whether you want to train the network using only a CPU or a GPU. Due to the very large size of the Jester dataset it is strongly recommended that you only perform the training using a GPU. The CPU mode is favorable when you just want to quickly test models. 
 
-To specify whether you want to use GPUs or CPUs for your computation, use the `--use_gpu` flag as described below.
+To specify whether you want to use the GPU or the CPU for your computation, use the `--use_gpu` flag as described below.
 
 # Procedure
 
