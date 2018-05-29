@@ -25,7 +25,9 @@ In the **configs** folder you will find two config files: `config.json` and `con
 
 ## 3. Modify the CSV Files (Optional)
 
-Please make sure to download all the **CSV files** as well. These CSV files contain the labels for the 25 different classes of hand gestures, and the video lables for both the training and validation sets. 
+In the **20bn-jester-v1/annotations** you will find the CSV files containing the labels for the 25 different classes of hand gestures,`jester-v1-labels.csv`, the lables for the videos in the training set, `jester-v1-train.csv`, the lables for the videos in the validation set, `jester-v1-validation.csv`. These CSV files should **not** be modified and should be used for training the network.
+
+In this folder you will also find the following files `jester-v1-labels-5-classes.csv`, `jester-v1-train-5-classes.csv`, and `jester-v1-validation-5-classes.csv`. These files **can** be modified and we recommend you use these files when quickly testing models. These files contain labels only for 4 classes of hand gestures and contain 8 videos for training and 4 videos for validation. Feel free to modify these files as you see fit to add more classes or more videos to the training and validation sets. This is useful when doing quick tests or if you don't have a GPU and want to do trainig on the CPU but you don't want to use the entire Jester dataset. 
 
 
 # CPU/GPU Option
