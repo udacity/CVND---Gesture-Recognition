@@ -20,9 +20,9 @@ The Jester dataset is provided as one large TGZ archive and has a total download
 
 More information, including alternative ways to download the dataset, is available in the [Jester Dataset](https://www.twentybn.com/datasets/jester) website. 
 
-## 2. Modify The `config.json` File
+## 2. Modify The Config File
 
-In the 
+In the **configs** folder you will find two config files: `config.json` and `config_5classes.json`. This config files
 
 
 # CPU/GPU option
