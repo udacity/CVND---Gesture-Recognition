@@ -24,7 +24,4 @@ Use `--use_gpu` flag to specify whether you want to use GPUs or CPUs for your co
 `python train.py --config configs/config.json -g 0`
 
 ## Test
-`python train.py --config configs/config.json -g 0 -r True`
-
-
 `python train.py --config configs/config_5classes.json --use_gpu=False`
