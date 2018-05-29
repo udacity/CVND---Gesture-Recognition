@@ -32,7 +32,7 @@ In this folder you will also find the following files:
 * `jester-v1-train-5-classes.csv`
 * `jester-v1-validation-5-classes.csv`
 
-These files **can** be modified and we recommend you use these files when quickly testing models. These files contain labels for only 4 classes of hand gestures and contain teh labels of 8 videos for training and 4 videos for validation. Feel free to modify these files as you see fit to add more classes or more videos to the training and validation sets. This is useful when doing quick tests or if you don't have a GPU and want to do training on the CPU but you don't want to use the entire Jester dataset. 
+These files **can** be modified and we recommend you use these files when quickly testing models. These files contain labels for only 4 classes of hand gestures and contain the labels of 8 videos for training and 4 videos for validation. Feel free to modify these files as you see fit to add more classes or more videos to the training and validation sets. This is useful when doing quick tests or if you don't have a GPU and want to do training on the CPU but you don't want to use the entire Jester dataset. 
 
 
 # CPU/GPU Option
