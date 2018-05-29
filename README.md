@@ -1,4 +1,4 @@
-# Hand Gesture Recognizer Tutorial
+# Hand Gesture Recognition Tutorial
 
 Scripts for TwentyBN Hand Gesture Recognizer Tutorials on [TwentyBN's blog](https://medium.com/twentybn). These scripts are modified from  TwentyBN's [GulpIO-benchmarks](https://github.com/TwentyBN/GulpIO-benchmarks) repository, written by [Raghav Goyal](https://github.com/raghavgoyal14) and the TwentyBN team.
 
