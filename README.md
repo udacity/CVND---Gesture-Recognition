@@ -51,7 +51,7 @@ When quickly testing models we recommend you use the `config_5classes.json` file
 
 ## Training
 
-When training a model we recommend you use the `config.json` file and the GPUs. To do this use the following commad:
+When training a model we recommend you use the `config.json` file and a GPU. To do this use the following commad:
 
 `python train.py --config configs/config.json -g 0`
 
