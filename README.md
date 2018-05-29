@@ -25,7 +25,7 @@ In the **configs** folder you will find two config files: `config.json` and `con
 
 ## 3. Modify the CSV Files (Optional)
 
-In the **20bn-jester-v1/annotations** you will find the CSV files containing the labels for the 25 different classes of hand gestures,`jester-v1-labels.csv`, the lables for the videos in the training set, `jester-v1-train.csv`, the lables for the videos in the validation set, `jester-v1-validation.csv`. These CSV files should **not** be modified and should be used for training the network.
+In the **20bn-jester-v1/annotations** folder you will find the CSV files containing the labels for the 25 different classes of hand gestures,`jester-v1-labels.csv`, the lables for the videos in the training set, `jester-v1-train.csv`, the lables for the videos in the validation set, `jester-v1-validation.csv`. These CSV files should **not** be modified and should be used for training the network.
 
 In this folder you will also find the following files:
 * `jester-v1-labels-5-classes.csv`
