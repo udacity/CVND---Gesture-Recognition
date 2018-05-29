@@ -18,13 +18,12 @@ The Jester dataset is provided as one large TGZ archive and has a total download
 
 `cat 20bn-jester-v1-?? | tar zx`
 
-Please make sure to download all the **CSV files** as well. These CSV files contain the labels for the 25 different classes of hand gestures, and the video lables for both the training and validation sets. 
-
 More information, including alternative ways to download the dataset, is available in the [Jester Dataset](https://www.twentybn.com/datasets/jester) website. 
 
-## 2. Change The Config File
+## 2. Modify The `config.json` File
 
-After you download the Jester dataset 
+In teh 
+
 
 # CPU/GPU option
 Use `--use_gpu` flag to specify whether you want to use GPUs or CPUs for your computation
@@ -36,3 +35,5 @@ Use `--use_gpu` flag to specify whether you want to use GPUs or CPUs for your co
 
 ## Test
 `python train.py --config configs/config_5classes.json --use_gpu=False`
+
+Please make sure to download all the **CSV files** as well. These CSV files contain the labels for the 25 different classes of hand gestures, and the video lables for both the training and validation sets. 
