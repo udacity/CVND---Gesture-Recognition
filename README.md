@@ -1,6 +1,6 @@
 # Hand Gesture Recognition Tutorial
 
-These scripts are modified from TwentyBN's [GulpIO-benchmarks](https://github.com/TwentyBN/GulpIO-benchmarks) repository, written by [Raghav Goyal](https://github.com/raghavgoyal14) and the TwentyBN team.
+These scripts are modified from TwentyBN's [GulpIO-benchmarks](https://github.com/TwentyBN/GulpIO-benchmarks) repository, written by [Raghav Goyal](https://github.com/raghavgoyal14) and the TwentyBN team. These scripts serve as a starting point to create your own gesture recognition model. 
 
 # Requirements
 
@@ -21,9 +21,13 @@ More information, including alternative ways to download the dataset, is availab
 
 ## 2. Modify The Config File
 
-In the **configs** folder you will find two config files: `config.json` and `config_5classes.json`. The `config.json` should be used for training the network and the `config_5classes.json` file should be used for quickly testing models. These config files contain the parameters to be used during training and testing, respectively. These files need to be modified to indicate the folder location of both the CSV files and the videos from the Jester dataset, a long with the parameters you want to use for training, such as the number of epochs. Please note that the default number of epochs in the `config.json` file used for training is set to `-1` which corresponds to `999999` epochs. 
+In the **configs** folder you will find two config files: `config.json` and `config_5classes.json`. The `config.json` should be used for training the network and the `config_5classes.json` file should be used for quickly testing models. These config files contain the parameters to be used during training and testing, respectively. These files need to be modified to indicate the folder location of both the CSV files and the videos from the Jester dataset, a long with the parameters you want to use for training, such as the number of epochs. Please note that the default number of epochs in the `config.json` file used for training is set to `-1` which corresponds to `999999` epochs.
 
-## 3. Modify the CSV Files (Optional)
+## 3. Create Your own Model
+
+
+
+## 4. Modify the CSV Files (Optional)
 
 In the **20bn-jester-v1/annotations** folder you will find the CSV files containing the labels for the 25 different classes of hand gestures,`jester-v1-labels.csv`, the lables for the videos in the training set, `jester-v1-train.csv`, the lables for the videos in the validation set, `jester-v1-validation.csv`. These CSV files should **not** be modified and should be used for training the network.
 
