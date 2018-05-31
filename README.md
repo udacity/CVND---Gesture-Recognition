@@ -36,7 +36,7 @@ Please note that the default number of epochs used for trainning is set to `-1` 
 
 ## 3. Create Your Own Model
 
-The `model.py` module already has a simple 3D CNN model that you can use to train your gesture recognition system. You are encouraged to modify `model.py` to create your own 3D CNN arquitecture.
+The `model.py` module already has a simple 3D CNN model that you can use to train your gesture recognition system. You are encouraged to modify `model.py` to create your own 3D CNN architecture.
 
 ## 4. Modify the CSV Files For Quick Testing (Optional)
 
