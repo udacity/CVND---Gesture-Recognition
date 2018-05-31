@@ -21,7 +21,7 @@ More information, including alternative ways to download the dataset, is availab
 
 ## 2. Modify The Config File
 
-In the **configs** folder you will find two config files: `config.json` and `config_5classes.json`. The `config.json` should be used for training the network and the `config_5classes.json` file should be used for quickly testing models. These config files contain the parameters to be used during training and testing, respectively. These files need to be modified to indicate the folder location of both the CSV files and the videos from the Jester dataset, a long with the parameters you want to use for training, such as the number of epochs. Please note that the default number of epochs in the `config.json` file used for training is set to `-1` which corresponds to `999999` epochs.
+In the **configs** folder you will find two config files: `config.json` and `config_quick_testing.json`. The `config.json` should be used for training the network and the `config_quick_testing.json` file should be used for quickly testing models. These config files contain the parameters to be used during training and testing, respectively. These files need to be modified to indicate the folder location of both the CSV files and the videos from the Jester dataset, a long with the parameters you want to use for training, such as the number of epochs. Please note that the default number of epochs in the `config.json` file used for training is set to `-1` which corresponds to `999999` epochs.
 
 ## 3. Create Your Own Model
 
@@ -32,9 +32,9 @@ The `model.py` module already has a simple 3D CNN model that you can use to trai
 In the **20bn-jester-v1/annotations** folder you will find the CSV files containing the labels for the 25 different classes of hand gestures,`jester-v1-labels.csv`, the lables for the videos in the training set, `jester-v1-train.csv`, the lables for the videos in the validation set, `jester-v1-validation.csv`. These CSV files should **not** be modified and should be used for training the network.
 
 In this folder you will also find the following files:
-* `jester-v1-labels-5-classes.csv`
-* `jester-v1-train-5-classes.csv`
-* `jester-v1-validation-5-classes.csv`
+* `jester-v1-labels-quick-testing.csv`
+* `jester-v1-train-quick-testing.csv`
+* `jester-v1-validation-quick-testing.csv`
 
 These files **can** be modified and we recommend you use these files when quickly testing models. These files contain labels for only 4 classes of hand gestures and contain the labels of 8 videos for training and 4 videos for validation. Feel free to modify these files as you see fit to add more classes or more videos to the training and validation sets. This is useful when doing quick tests or if you don't have a GPU and want to do training on the CPU but you don't want to use the entire Jester dataset. 
 
@@ -49,9 +49,9 @@ To specify whether you want to use the GPU or the CPU for your computation, use 
 
 ## Testing
 
-When quickly testing models we recommend you use the `config_5classes.json` file and the CPU. To do this use the following commad:
+When quickly testing models we recommend you use the `config_quick_testing.json` file and the CPU. To do this use the following commad:
 
-`python train.py --config configs/config_5classes.json --use_gpu=False`
+`python train.py --config configs/config_quick_testing.json --use_gpu=False`
 
 ## Training
 
