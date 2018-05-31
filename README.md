@@ -17,6 +17,8 @@ The Jester dataset is provided as one large TGZ archive and has a total download
 
 `cat 20bn-jester-v1-?? | tar zx`
 
+The CSV files containing the labels for the videos in the Jester dataset have already been downloaded for you and can be found in the **20bn-jester-v1/annotations** folder.
+
 More information, including alternative ways to download the dataset, is available in the [Jester Dataset](https://www.twentybn.com/datasets/jester) website. 
 
 ## 2. Modify The Config File
