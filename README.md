@@ -57,7 +57,7 @@ Feel free to add more classes of hand gestures or more videos to the training an
 
 You can choose whether you want to train the network using only a CPU or a GPU. Due to the very large size of the Jester dataset it is **strongly recommended** that you only perform the training using a GPU. The CPU mode is favorable when you just want to quickly test models.
 
-To specify that you want to use the CPU for your computation, use the `--use_gpu` flag as described below.
+To specify that you want to use the CPU for your computation, use the `--use_gpu=False` flag as described below.
 
 # Procedure
 
