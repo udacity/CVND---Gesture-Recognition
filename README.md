@@ -32,7 +32,7 @@ The `config.json` file should be used for training the network and the `config_q
 
 These config files also contain the parameters to be used during training and quick testing, such as the number of epochs, batch size, learning rate, etc... Feel free to modify these parameters as you see fit.
 
-Please note that the default number of epochs used for trainning is set to `-1` in the `config.json` file, which corresponds to `999999` epochs. 
+Please note that the default number of epochs used for training is set to `-1` in the `config.json` file, which corresponds to `999999` epochs. 
 
 ## 3. Create Your Own Model
 
@@ -46,7 +46,9 @@ In the **20bn-jester-v1/annotations** folder you will find the following CSV fil
 * `jester-v1-train-quick-testing.csv`
 * `jester-v1-validation-quick-testing.csv`
 
-These files are used when quickly testing models and can be modified as you see fit. By default, the `jester-v1-labels-quick-testing.csv` file contains labels for only 4 classes of hand gestures and 1 label for "Doing other things"; the `jester-v1-train-quick-testing.csv` file contains the video ID and the corresponding labels of only 8 videos for training; and the `jester-v1-validation-quick-testing.csv` file contains the video ID and the corresponding labels for only 4 videos for validation. Feel free to add more classes of hand gestures or more videos to the training and validation sets. To add more classes of hand gestures, simply copy and paste from the `jester-v1-labels.csv` file that contains all the 25 different classes of hand gestures. Simlarly, to add more videos to the training and validation sets, simply copy and paste from the `jester-v1-train.csv`, `jester-v1-validation.csv` files that contain all the video IDs and corresponding labels from the Jester dataset.
+These files are used when quickly testing models and can be modified as you see fit. By default, the `jester-v1-labels-quick-testing.csv` file contains labels for only 4 classes of hand gestures and 1 label for "Doing other things"; the `jester-v1-train-quick-testing.csv` file contains the video ID and the corresponding labels of only 8 videos for training; and the `jester-v1-validation-quick-testing.csv` file contains the video ID and the corresponding labels for only 4 videos for validation.
+
+Feel free to add more classes of hand gestures or more videos to the training and validation sets. To add more classes of hand gestures, simply copy and paste from the `jester-v1-labels.csv` file that contains all the 25 different classes of hand gestures. Similarly, to add more videos to the training and validation sets, simply copy and paste from the `jester-v1-train.csv` and `jester-v1-validation.csv` files that contain all the video IDs and corresponding labels from the Jester dataset.
 
 **NOTE**: In this folder you will also find the CSV files used for training: `jester-v1-labels.csv`, `jester-v1-train.csv`, `jester-v1-validation.csv`. These CSV files should **not** be modified.
 
@@ -61,12 +63,12 @@ To specify whether you want to use the GPU or the CPU for your computation, use 
 
 ## Testing
 
-It is recommended that you quickly test your models before you train them on the full Jester dataset. When quickly testing models we suggest you use the `config_quick_testing.json` file and the CPU. To do this, use the following commad:
+It is recommended that you quickly test your models before you train them on the full Jester dataset. When quickly testing models we suggest you use the `config_quick_testing.json` file and the CPU. To do this, use the following command:
  
 `python train.py --config configs/config_quick_testing.json --use_gpu=False`
 
 ## Training
 
-When training a model you should use the `config.json` file and a GPU (**strongly recommended**). To train your model using a GPU use the following commad:
+When training a model you should use the `config.json` file and a GPU (**strongly recommended**). To train your model using a GPU use the following command:
 
 `python train.py --config configs/config.json -g 0`
