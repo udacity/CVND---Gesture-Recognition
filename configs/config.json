@@ -1,6 +1,6 @@
 {
     "model_name": "jester_conv_example",
-    "checkpoint": "trainings/jpeg_model/jester_conv/checkpoint.pth.tar",
+    "checkpoint": "trainings/jpeg_model/jester_conv_example/checkpoint.pth.tar",
 
     "train_data_folder": "/data-ssd1/20bn-datasets/20bn-jester-v1/videos",
     "val_data_folder": "/data-ssd1/20bn-datasets/20bn-jester-v1/videos",
