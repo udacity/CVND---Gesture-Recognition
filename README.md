@@ -50,7 +50,7 @@ These files are used when quickly testing models and can be modified as you see 
 
 Feel free to add more classes of hand gestures or more videos to the training and validation sets. To add more classes of hand gestures, simply copy and paste from the `jester-v1-labels.csv` file that contains all the 25 different classes of hand gestures. Similarly, to add more videos to the training and validation sets, simply copy and paste from the `jester-v1-train.csv` and `jester-v1-validation.csv` files that contain all the video IDs and corresponding labels from the Jester dataset.
 
-**NOTE**: In this folder you will also find the CSV files used for training: `jester-v1-labels.csv`, `jester-v1-train.csv`, `jester-v1-validation.csv`. These CSV files should **not** be modified.
+**NOTE**: In this folder you will also find the CSV files used for training: `jester-v1-labels.csv`, `jester-v1-train.csv`, and `jester-v1-validation.csv`. These CSV files should **NOT** be modified.
 
 
 # CPU/GPU Option
