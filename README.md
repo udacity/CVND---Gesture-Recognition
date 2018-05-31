@@ -1,6 +1,6 @@
 # Hand Gesture Recognition Tutorial
 
-These scripts are modified from TwentyBN's [GulpIO-benchmarks](https://github.com/TwentyBN/GulpIO-benchmarks) repository, written by [Raghav Goyal](https://github.com/raghavgoyal14) and the TwentyBN team. These scripts serve as a starting point to create your own gesture recognition model. 
+These scripts are modified from TwentyBN's [GulpIO-benchmarks](https://github.com/TwentyBN/GulpIO-benchmarks) repository, written by [Raghav Goyal](https://github.com/raghavgoyal14) and the TwentyBN team. These scripts serve as a starting point to create your own gesture recognition system. 
 
 # Requirements
 
@@ -23,9 +23,9 @@ More information, including alternative ways to download the dataset, is availab
 
 In the **configs** folder you will find two config files: `config.json` and `config_5classes.json`. The `config.json` should be used for training the network and the `config_5classes.json` file should be used for quickly testing models. These config files contain the parameters to be used during training and testing, respectively. These files need to be modified to indicate the folder location of both the CSV files and the videos from the Jester dataset, a long with the parameters you want to use for training, such as the number of epochs. Please note that the default number of epochs in the `config.json` file used for training is set to `-1` which corresponds to `999999` epochs.
 
-## 3. Create Your own Model
+## 3. Create Your Own Model
 
-
+The `model.py` module already has a simple 3D CNN model that you can use to train your gesture recognition system. You are encouraged to modify `model.py` to create your own models. You can use a very small subset of the Jester dataset to quickly test your models before you train them on the full Jester dataset. 
 
 ## 4. Modify the CSV Files (Optional)
 
