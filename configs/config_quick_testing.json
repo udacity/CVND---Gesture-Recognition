@@ -1,6 +1,6 @@
 {
-    "model_name": "jester_conv_example_5_classes",
-    "checkpoint": "trainings/jpeg_model/jester_conv_quick_testing/checkpoint.pth.tar",
+    "model_name": "jester_conv_4_classes",
+    "checkpoint": "trainings/jpeg_model/jester_conv_4_classes/checkpoint.pth.tar",
 
     "train_data_folder": "./20bn-jester-v1/videos",
     "val_data_folder": "./20bn-jester-v1/videos",
