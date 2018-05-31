@@ -36,39 +36,35 @@ Please note that the default number of epochs used for trainning is set to `-1` 
 
 The `model.py` module already has a simple 3D CNN model that you can use to train your gesture recognition system. You are encouraged to modify `model.py` to create your own 3D CNN arquitecture.
 
-## 4. Modify the CSV Files (Optional)
+## 4. Modify the CSV Files For Quick Testing (Optional)
 
-In the **20bn-jester-v1/annotations** folder you will find the CSV files containing the labels for the 25 different classes of hand gestures,`jester-v1-labels.csv`, the lables for the videos in the training set, `jester-v1-train.csv`, the lables for the videos in the validation set, `jester-v1-validation.csv`. These CSV files should **not** be modified and should be used for training the network.
+In the **20bn-jester-v1/annotations** folder you will find the following CSV files:
 
-In this folder you will also find the following files:
 * `jester-v1-labels-quick-testing.csv`
 * `jester-v1-train-quick-testing.csv`
 * `jester-v1-validation-quick-testing.csv`
 
-These files **can** be modified and we recommend you use these files when quickly testing models. These files contain labels for only 4 classes of hand gestures and contain the labels of 8 videos for training and 4 videos for validation. Feel free to modify these files as you see fit to add more classes or more videos to the training and validation sets. This is useful when doing quick tests or if you don't have a GPU and want to do training on the CPU but you don't want to use the entire Jester dataset. 
+These files are used when quickly testing models and can be modified as you see fit. By default, the `jester-v1-labels-quick-testing.csv` file contains labels for only 4 classes of hand gestures and 1 label for "Doing other things"; `jester-v1-train-quick-testing.csv` contains the video ID and the corresponding labels of only 8 videos for training; and the `jester-v1-validation-quick-testing.csv` file contains the video ID and the corresponding labels for only 4 videos for validation. Feel free to modify these files as you see fit to add more classes of hand gestures or more videos to the training and validation sets. To add more classes of hand gestures, simply copy and paste from the `jester-v1-labels.csv` file that contains all the 25 different classes of hand gestures. Simlarly, to add more videos to the training and validation sets, simply copy and paste from the `jester-v1-train.csv`, `jester-v1-validation.csv` files that contain all the video IDs and corresponding labels from the Jester dataset.
+
+**NOTE**: In this folder you will also find the CSV files used for training: `jester-v1-labels.csv`, `jester-v1-train.csv`, `jester-v1-validation.csv`. These CSV files should **not** be modified.
 
 
 # CPU/GPU Option
 
-The code allows you to choose whether you want to train the network using only a CPU or a GPU. Due to the very large size of the Jester dataset it is strongly recommended that you only perform the training using a GPU. The CPU mode is favorable when you just want to quickly test models. 
+You can choose whether you want to train the network using only a CPU or a GPU. Due to the very large size of the Jester dataset it is **strongly recommended** that you only perform the training using a GPU. The CPU mode is favorable when you just want to quickly test models.
 
 To specify whether you want to use the GPU or the CPU for your computation, use the `--use_gpu` flag as described below.
 
 # Procedure
 
 ## Testing
-You can use a very small subset of the Jester dataset to quickly test your models before you train them on the full Jester dataset. 
 
-When quickly testing models we recommend you use the `config_quick_testing.json` file and the CPU. To do this use the following commad:
-
+It is recommended that you quickly test your models before you train them on the full Jester dataset. When quickly testing models we suggest you use the `config_quick_testing.json` file and the CPU. To do this, use the following commad:
+ 
 `python train.py --config configs/config_quick_testing.json --use_gpu=False`
 
 ## Training
 
-When training a model we recommend you use the `config.json` file and a GPU. To do this use the following commad:
+When training a model you should use the `config.json` file and a GPU (**strongly recommended**). To train your model using a GPU use the following commad:
 
 `python train.py --config configs/config.json -g 0`
-
-
-
-
