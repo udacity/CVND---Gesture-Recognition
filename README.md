@@ -28,7 +28,7 @@ In the **configs** folder you will find two config files:
 * `config.json`
 * `config_quick_testing.json`
 
-The `config.json` file should be used for training the network and the `config_quick_testing.json` file should be used for quickly testing models. These files need to be modified to indicate the location of both the CSV files and the videos from the Jester dataset. The default location is `./20bn-jester-v1/annotations/` for the CSV files and `./20bn-jester-v1/videos` for the videos. 
+The `config.json` file should be used for training the network and the `config_quick_testing.json` file should be used for quickly testing models. These files need to be modified to indicate the location of both the CSV files and the videos from the Jester dataset. The default location is `./20bn-jester-v1/annotations/` for the CSV files and `./20bn-jester-v1/videos/` for the videos. 
 
 These config files also contain the parameters to be used during training and quick testing, such as the number of epochs, batch size, learning rate, etc... Feel free to modify these parameters as you see fit.
 
