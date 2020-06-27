@@ -176,7 +176,10 @@ def main():
             print(" > Training is done by reaching the last learning rate {}".
                   format(last_lr))
             sys.exit(1)
-
+        
+        for param_group in optimizer.param_groups:
+            param_group['lr'] = lr
+            
         # train for one epoch
         train_loss, train_top1, train_top5 = train(
             train_loader, model, criterion, optimizer, epoch)
