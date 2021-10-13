@@ -137,7 +137,7 @@ def main():
 
     assert len(train_data.classes) == config["num_classes"]
 
-    # define loss function (criterion) and pptimizer
+    # define loss function (criterion) and optimizer
     criterion = nn.CrossEntropyLoss().to(device)
 
     # define optimizer
